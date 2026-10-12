@@ -1,0 +1,20 @@
+#
+# Copyright (c) 2026 Jamie Kenyon. All Rights Reserved.
+#
+
+version = "0.0.1.0"
+
+["home.title"]
+"en-US" = "Home"
+"fr-FR" = "Accueil"
+"es-ES" = "Inicio"
+
+["home.subtitle"]
+"en-US" = "Welcome back"
+"fr-FR" = "Bon retour"
+"es-ES" = "Bienvenido de nuevo"
+
+["button.save"]
+"en-US" = "Save"
+"fr-FR" = "Enregistrer"
+"es-ES" = "Guardar"

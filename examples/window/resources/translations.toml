@@ -1,0 +1,23 @@
+#
+# Copyright (c) 2026 Jamie Kenyon. All Rights Reserved.
+#
+
+version = "0.0.1.0"
+
+["ExampleWindow.title"]
+"en-GB" = "Widgets Example"
+"en-US" = "Widgets Example"
+"fr-FR" = "Exemple de widgets"
+"es-ES" = "Ejemplo de widgets"
+
+["ExampleWindow.File"]
+"en-GB" = "&File"
+"en-US" = "&File"
+"fr-FR" = "&File"
+"es-ES" = "&File"
+
+["ExampleWindow.Exit"]
+"en-GB" = "E&xit"
+"en-US" = "E&xit"
+"fr-FR" = "E&xit"
+"es-ES" = "E&xit"

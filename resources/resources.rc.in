@@ -1,0 +1,55 @@
+//
+// Copyright (c) 2026 Jamie Kenyon. All rights reserved.
+//
+// SPDX-License-Identifier: MIT.
+//
+
+#pragma code_page(65001) // UTF-8
+#include <winres.h>
+#include <winver.h>
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION @CMAKE_PROJECT_VERSION_MAJOR@,@CMAKE_PROJECT_VERSION_MINOR@,@CMAKE_PROJECT_VERSION_PATCH@,@CMAKE_PROJECT_VERSION_TWEAK@
+ PRODUCTVERSION @CMAKE_PROJECT_VERSION_MAJOR@,@CMAKE_PROJECT_VERSION_MINOR@,@CMAKE_PROJECT_VERSION_PATCH@,@CMAKE_PROJECT_VERSION_TWEAK@
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080904b0"
+        BEGIN
+            VALUE "Comments", "For support, visit @CMAKE_PROJECT_HOMEPAGE_URL@."
+            VALUE "CompanyName", "Jamie Kenyon"
+            VALUE "FileDescription", "@CMAKE_PROJECT_DESCRIPTION@ by Jamie Kenyon"
+            VALUE "FileVersion", "@CMAKE_PROJECT_VERSION_MAJOR@.@CMAKE_PROJECT_VERSION_MINOR@.@CMAKE_PROJECT_VERSION_PATCH@.@CMAKE_PROJECT_VERSION_TWEAK@"
+            VALUE "InternalName", "@CMAKE_PROJECT_NAME@"
+            VALUE "LegalCopyright", "Copyright © {BUILD_YEAR} Jamie Kenyon."
+            VALUE "OriginalFilename", "@CMAKE_PROJECT_NAME@.exe"
+            VALUE "ProductName", "@CMAKE_PROJECT_NAME@"
+            VALUE "ProductVersion", "@CMAKE_PROJECT_VERSION_MAJOR@.@CMAKE_PROJECT_VERSION_MINOR@.@CMAKE_PROJECT_VERSION_PATCH@.@CMAKE_PROJECT_VERSION_TWEAK@"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x809, 1200
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icons
+//
+
+101 ICON "project.ico"

@@ -1,0 +1,10 @@
+#
+# Copyright (c) 2026 Jamie Kenyon. All Rights Reserved.
+#
+
+version = "0.0.1.0"
+
+# Define files to include in the archive
+files = [
+    { file  = "../../../resources/project.qoi", alias = "project" }
+]
